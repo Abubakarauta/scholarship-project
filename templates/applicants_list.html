@@ -1,0 +1,108 @@
+{%extends 'base.html'%}
+		{% load static %}
+	{%block content%}
+	<head>
+	{% block title %}
+ <title>applicants_list</title>
+	{% endblock title%}
+	</head>
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="{% static 'https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		
+		
+		
+		
+		<!--about-part start-->
+		<section class="about-part project-part">
+			<div class="container">
+				<div class="about-part-details text-center"> 
+					<h2>applicants_list</h2>
+					<div class="about-part-content">
+						<div class="breadcrumbs">
+							<div class="container">
+								<ol class="breadcrumb">
+								  <li><a href="{% static 'index.html' %}">home</a><span>//</span></li>
+								  <li><a href="{% static 'project.html' %}">project</a></li>
+								</ol><!--/.breadcrumb-->
+							</div><!--/.container-->
+						</div><!--/.breadcrumbs-->
+					</div><!--/.about-part-content-->
+				</div><!--/.about-part-details-->	
+			</div><!--/.container-->
+
+		</section><!--/.about-part-->
+		<!--about-part end-->
+
+		
+
+		
+		<!--applicants_list start -->
+     
+		<section  class="news">
+			<div class="container">
+				<div class="news-details">
+					<div class="section-header text-center">
+						<h2>list of applicants</h2>
+						<p>
+							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						</p>
+					</div><!--/.section-header-->
+					<div class="news-card news-card-pb-25">
+							<div class="row">
+
+                            {% for i in user %}
+                            
+								<div class="col-md-4 col-sm-6">
+									<div class="single-news-box">
+										<div class="news-box-bg">
+											<img src="{% static '{{i.Candidate_image.url}}' %}" alt="candidate image">
+											<div class="isotope-overlay">
+												<a href=" {% static '#' %}">
+													<span class="lnr lnr-link"></span>
+													
+												</a>
+											</div>
+
+										</div><!--/.team-box-bg-->
+										<div class="news-box-inner">
+                                            <h2>Mr/Mrs: {{i.First_name}}</h2><br>
+											<h3>
+											Gender:	{{i.Gender}}<br>
+											</h3>
+											<p class="news-meta">
+												applied on:  <span>12th january</span> 
+											</p>
+                                            <p>
+											<a href="{% url 'applicant_details', applicant_details.id %}">See details</a>
+
+											 
+                                            </p>
+										</div> <!--/.news-box-inner-->
+									</div><!--/.single-news-box-->
+								</div><!--.col-->
+                            {% endfor %}
+								
+
+							</div><!--/.row-->
+							
+					</div><!--/.news-card-->
+					
+				</div><!--/news-details-->
+			</div><!--/.container-->
+
+		</section><!--/news-->
+		<!--applicants_list end-->
+      
+
+
+		
+
+
+
+		
+    </body>
+	
+	{%endblock content%}
