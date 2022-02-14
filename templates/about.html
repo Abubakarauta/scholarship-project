@@ -1,8 +1,9 @@
 {%extends 'base.html'%}
+{% load static %}
 	{%block content%}
 	<body>
 		<!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="{% static 'https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 		
 		
@@ -34,7 +35,7 @@
 						<div class="col-md-5 col-sm-12">
 							<div class="single-about-history">
 								<div class="about-history-img">
-									<img src="assets/images/about/9.jpg" alt="about">
+									<img src="{% static 'assets/images/about/9.jpg' %}" alt="about">
 								</div><!--/.about-history-img-->
 							</div><!--/.single-about-history-->
 						</div><!--/.col-->
@@ -80,7 +81,7 @@ Some college student scholarships will require you to be admitted to an institut
 							<div class="col-md-offset-1 col-md-5 col-sm-12">
 								<div class="single-about-history">
 									<div class="about-history-img">
-										<img src="assets/images/about/19.jpg" alt="about">
+										<img src="{% static 'assets/images/about/19.jpg' %}" alt="about">
 									</div><!--/.about-history-img-->
 								</div><!--/.single-about-history-->
 							</div><!--/.col-->
@@ -91,7 +92,7 @@ Some college student scholarships will require you to be admitted to an institut
 						<div class="col-md-offset-1 col-md-5 col-sm-12">
 								<div class="single-about-history">
 									<div class="about-history-img">
-										<img src="assets/images/about/18.jpg" alt="about">
+										<img src="{% static 'assets/images/about/18.jpg' %}" alt="about">
 									</div><!--/.about-history-img-->
 								</div><!--/.single-about-history-->
 							</div><!--/.col-->
@@ -134,7 +135,7 @@ Finding college scholarships for college students can be a lengthy process — y
 							<div class="col-md-offset-1 col-md-5 col-sm-12">
 								<div class="single-about-history">
 									<div class="about-history-img">
-										<img src="assets/images/about/7.jpg" alt="about">
+										<img src="{% static 'assets/images/about/7.jpg' %}" alt="about">
 									</div><!--/.about-history-img-->
 								</div><!--/.single-about-history-->
 							</div><!--/.col-->
@@ -156,7 +157,7 @@ Finding college scholarships for college students can be a lengthy process — y
 					<div class="col-md-3 col-sm-6">
 						<div class="single-ststistics-box">
 							<div class="statistics-img">
-								<img src="assets/images/counter/counter1.png" alt="counter-icon" />
+								<img src="{% static 'assets/images/counter/counter1.png'%}" alt="counter-icon" />
 							</div><!--/.statistics-img-->
 							<div class="statistics-content">
 								<div class="counter">360</div>
@@ -167,7 +168,7 @@ Finding college scholarships for college students can be a lengthy process — y
 					<div class="col-md-3 col-sm-6">
 						<div class="single-ststistics-box">
 							<div class="statistics-img">
-								<img src="assets/images/counter/counter2.png" alt="counter-icon" />
+								<img src="{% static 'assets/images/counter/counter2.png'%}" alt="counter-icon" />
 							</div><!--/.statistics-img-->
 							<div class="statistics-content">
 								<div class="counter">1100</div>
@@ -178,7 +179,7 @@ Finding college scholarships for college students can be a lengthy process — y
 					<div class="col-md-3 col-sm-6">
 						<div class="single-ststistics-box">
 							<div class="statistics-img">
-								<img src="assets/images/counter/counter3.png" alt="counter-icon" />
+								<img src="{% static 'assets/images/counter/counter3.png'%}" alt="counter-icon" />
 							</div><!--/.statistics-img-->
 							<div class="statistics-content">
 								<div class="counter">1526</div>
@@ -189,7 +190,7 @@ Finding college scholarships for college students can be a lengthy process — y
 					<div class="col-md-3 col-sm-6">
 						<div class="single-ststistics-box">
 							<div class="statistics-img">
-								<img src="assets/images/counter/counter4.png" alt="counter-icon" />
+								<img src="{% static 'assets/images/counter/counter4.png'%}" alt="counter-icon" />
 							</div><!--/.statistics-img-->
 							<div class="statistics-content">
 								<div class="counter">856</div>
@@ -220,11 +221,11 @@ Finding college scholarships for college students can be a lengthy process — y
 									<div class="we-do-description">
 										<div class="we-do-info">
 											<div class="we-do-img">
-												<img src="assets/images/home/consultency.png" alt="image of consultency" />
+												<img src="{% static 'assets/images/home/consultency.png'%}" alt="image of consultency" />
 											</div><!--/.we-do-img-->
 											<div class="we-do-topics">
 												<h2>
-													<a href="# ">
+													<a href="{% static '#' %} ">
 														Brainstorming
 													</a>
 												</h2>
@@ -243,11 +244,11 @@ Finding college scholarships for college students can be a lengthy process — y
 									<div class="we-do-description">
 										<div class="we-do-info">
 											<div class="we-do-img">
-												<img src="assets/images/home/busisness_grow.png" alt="image of business" />
+												<img src="{% static 'assets/images/home/busisness_grow.png'%}" alt="image of business" />
 											</div><!--/.we-do-img-->
 											<div class="we-do-topics">
 												<h2>
-													<a href="# ">
+													<a href="{% static '#' %} ">
 														A Community for Change
 													</a>
 												</h2>
@@ -266,11 +267,11 @@ Finding college scholarships for college students can be a lengthy process — y
 									<div class="we-do-description">
 										<div class="we-do-info">
 											<div class="we-do-img">
-												<img src="assets/images/home/support-logo.png" alt="image of support" />
+												<img src="{% static 'assets/images/home/support-logo.png'%}" alt="image of support" />
 											</div><!--/.we-do-img-->
 											<div class="we-do-topics">
 												<h2>
-													<a href="# ">
+													<a href="{% static '#' %} ">
 														Great support
 													</a>
 
@@ -307,7 +308,7 @@ Finding college scholarships for college students can be a lengthy process — y
 					<div class="home1-testm item">
 						<div class="home1-testm-single text-center">
 							<div class="home1-testm-img">
-								<img src="assets/images/client/testimonial1.jpg" alt="img"/>
+								<img src="{% static 'assets/images/client/testimonial1.jpg' %}" alt="img"/>
 							</div><!--/.home1-testm-img-->
 							<div class="home1-testm-txt">
 								<span class="icon section-icon">
@@ -317,7 +318,7 @@ Finding college scholarships for college students can be a lengthy process — y
 									Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
 								</p>
 								<h3>
-									<a href="# ">
+									<a href="{% static '#' %} ">
 										kevin watson
 									</a>
 								</h3>
@@ -328,7 +329,7 @@ Finding college scholarships for college students can be a lengthy process — y
 					<div class="home1-testm item">
 						<div class="home1-testm-single text-center">
 							<div class="home1-testm-img">
-								<img src="assets/images/client/testimonial2.jpg" alt="img"/>
+								<img src="{% static 'assets/images/client/testimonial2.jpg' %}" alt="img"/>
 							</div><!--/.home1-testm-img-->
 							<div class="home1-testm-txt">
 								<span class="icon section-icon">
@@ -338,7 +339,7 @@ Finding college scholarships for college students can be a lengthy process — y
 									Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
 								</p>
 								<h3>
-									<a href="# ">
+									<a href="{% static '#' %} ">
 										kevin watson
 									</a>
 								</h3>
@@ -349,7 +350,7 @@ Finding college scholarships for college students can be a lengthy process — y
 					<div class="home1-testm item">
 						<div class="home1-testm-single text-center">
 							<div class="home1-testm-img">
-								<img src="assets/images/client/testimonial1.jpg" alt="img"/>
+								<img src="{% static 'assets/images/client/testimonial1.jpg' %}" alt="img"/>
 							</div><!--/.home1-testm-img-->
 							<div class="home1-testm-txt">
 								<span class="icon section-icon">
@@ -359,7 +360,7 @@ Finding college scholarships for college students can be a lengthy process — y
 									Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
 								</p>
 								<h3>
-									<a href="# ">
+									<a href="{% static '#' %} ">
 										kevin watson
 									</a>
 								</h3>

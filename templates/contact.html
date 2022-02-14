@@ -1,9 +1,9 @@
 {%extends 'base.html'%}
-
+	{% load static %}
 {%block content%}
 	<body>
 		<!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy'.com">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 		
 		
@@ -19,8 +19,8 @@
 						<div class="breadcrumbs">
 							<div class="container">
 								<ol class="breadcrumb">
-								  <li><a href="index.html">home</a><span>//</span></li>
-								  <li><a href="contact.html">contact</a></li>
+								  <li><a href="{% url 'index' %}">home</a><span>//</span></li>
+								  <li><a href="{% url 'contact' %}">contact</a></li>
 								</ol><!--/.breadcrumb-->
 							</div><!--/.container-->
 						</div><!--/.breadcrumbs-->
@@ -68,10 +68,10 @@
 												<h3>social partner</h3>
 												<div class="contact-icon">
 													<ul>
-														<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><!--/li-->
-														<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li><!--/li-->
-														<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li><!--/li-->
-														<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><!--/li-->
+														<li><a href="{% static '#' %}"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><!--/li-->
+														<li><a href="{% static '#' %}"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li><!--/li-->
+														<li><a href="{% static '#' %}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li><!--/li-->
+														<li><a href="{% static '#' %}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><!--/li-->
 													</ul><!--/ul-->
 												</div><!--/.contact-icon-->
 											</div><!--/.contact-office-address-->

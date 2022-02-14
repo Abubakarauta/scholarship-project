@@ -938,9 +938,6 @@ a:focus.service-btn{
 
 /*team-box-bg*/
 
-.team-box-bg-1{
-	background: url(../../assets/images/team/team.jpg) no-repeat;
-}
 .team-box-bg-2{
 	background: url(../../assets/images/team/team3.jpg) no-repeat;
 }
@@ -2068,7 +2065,7 @@ a:active.learn-btn{
 	color:#908edf;
 	border:1px solid #908edf;
 }
-/*-blog button-*/\
+/*-blog button-*/
 
 /*pagination*/
 .pagination-part {

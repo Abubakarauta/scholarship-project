@@ -1,9 +1,10 @@
 {%extends 'base.html'%}
+{% load static %}
 	{%block content%}
 	
 	<body>
 		<!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="{%static 'https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 		
 		
@@ -21,8 +22,8 @@
 						<div class="breadcrumbs">
 							<div class="container">
 								<ol class="breadcrumb">
-								  <li><a href="#">Partners</a><span>//</span></li>
-								  <li><a href="team.html">Team</a></li>
+								  <li><a href="{%static '#' %}">Partners</a><span>//</span></li>
+								  <li><a href="{%static 'team.html' %}">Team</a></li>
 								</ol><!--/.breadcrumb-->
 							</div><!--/.container-->
 						</div><!--/.breadcrumbs-->
@@ -47,18 +48,20 @@
 						<div class="container">
 							<div class="row">
 								<div class="owl-carousel  team-carousel">
+
 									<div class="col-sm-3 col-xs-12">
-										<div class="single-team-box single-team-card team-box-bg-1">
+										<div class="single-team-box single-team-card team-box-bg-1" >
 											<div class="team-box-inner">
 												<h3>tom hanks</h3>
 												<p class="team-meta">Founder &  CEO</p>
-												<a href="team.html" class="learn-btn">
+												<a href="{%static 'team.html' %}" class="learn-btn">
 													learn more
 												</a>
 											</div><!--/.team-box-inner-->
 
 										</div><!--/.single-team-box-->
 									</div><!--.col-->
+
 									<div class="col-sm-3 col-xs-12">
 										<div class="single-team-box single-team-card team-box-bg-2">
 											<div class="team-box-inner">
@@ -66,7 +69,7 @@
 												<p class="team-meta">
 													Director, Management & Research
 												</p>
-												<a href="team.html" class="learn-btn">
+												<a href="{%static 'team.html' %}" class="learn-btn">
 													learn more
 												</a>
 											</div><!--/.team-box-inner-->
@@ -79,7 +82,7 @@
 												<p class="team-meta">
 													Director, Finance Solution
 												</p>
-												<a href="team.html" class="learn-btn">
+												<a href="{%static 'team.html' %}" class="learn-btn">
 													learn more
 												</a>
 											</div><!--/.team-box-inner-->
@@ -92,7 +95,7 @@
 												<p class="team-meta">
 													Head, Legal Advising
 												</p>
-												<a href="team.html" class="learn-btn">
+												<a href="{%static 'team.html' %}" class="learn-btn">
 													learn more
 												</a>
 											</div><!--/.team-box-inner-->
@@ -111,7 +114,7 @@
 											<div class="team-box-inner">
 												<h3>tom hanks</h3>
 												<p class="team-meta">Founder &  CEO</p>
-												<a href="team.html" class="learn-btn">
+												<a href="{%static 'team.html' %}" class="learn-btn">
 													learn more
 												</a>
 											</div><!--/.team-box-inner-->
@@ -125,7 +128,7 @@
 												<p class="team-meta">
 													Director, Management & Research
 												</p>
-												<a href="team.html" class="learn-btn">
+												<a href="{%static 'team.html' %}" class="learn-btn">
 													learn more
 												</a>
 											</div><!--/.team-box-inner-->
@@ -138,7 +141,7 @@
 												<p class="team-meta">
 													Director, Finance Solution
 												</p>
-												<a href="team.html" class="learn-btn">
+												<a href="{%static 'team.html' %}" class="learn-btn">
 													learn more
 												</a>
 											</div><!--/.team-box-inner-->
@@ -151,7 +154,7 @@
 												<p class="team-meta">
 													Head, Legal Advising
 												</p>
-												<a href="team.html" class="learn-btn">
+												<a href="{%static 'team.html' %}" class="learn-btn">
 													learn more
 												</a>
 											</div><!--/.team-box-inner-->
