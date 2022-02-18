@@ -29,11 +29,7 @@ class applicant(models.Model):
     def __str__(self):
         return self.First_name
 
-class blog_details(models.Model):
-    image=models.FileField(upload_to='image')
-    content=models.CharField(max_length=50)
-    title=models.CharField(max_length=50)
-    published_date=models.DateField()
 
-    def __str__(self):
-        return self.title
+
+
+

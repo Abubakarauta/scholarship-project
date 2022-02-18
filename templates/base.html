@@ -275,9 +275,13 @@
 							</div><!-- /.col-->	
 							<div class="col-md-2 col-sm-4">
 								<div class="single-new-project">
+									<form method='post'>{% csrf_token %}
+									
 									<a href="{% static '#' %}" class="slide-btn" data-toggle="modal" data-target=".bs-example-modal-llg">
 										Apply now
 									</a>
+									</form>
+									
 								</div><!-- /.single-new-project-->	
 							</div><!-- /.col-->	
 						</div><!-- /.row-->	

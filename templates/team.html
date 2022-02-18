@@ -48,12 +48,12 @@
 						<div class="container">
 							<div class="row">
 								<div class="owl-carousel  team-carousel">
-
+									{% for i in teams %}
 									<div class="col-sm-3 col-xs-12">
 										<div class="single-team-box single-team-card team-box-bg-1" >
 											<div class="team-box-inner">
-												<h3>tom hanks</h3>
-												<p class="team-meta">Founder &  CEO</p>
+												<h3>i.name</h3>
+												<p class="team-meta">i.role</p>
 												<a href="{%static 'team.html' %}" class="learn-btn">
 													learn more
 												</a>
@@ -61,7 +61,7 @@
 
 										</div><!--/.single-team-box-->
 									</div><!--.col-->
-
+									{% endfor %}
 									<div class="col-sm-3 col-xs-12">
 										<div class="single-team-box single-team-card team-box-bg-2">
 											<div class="team-box-inner">
@@ -101,6 +101,7 @@
 											</div><!--/.team-box-inner-->
 										</div><!--/.single-team-box-->
 									</div><!--.col-->
+
 								</div><!--/.team-carousel-->
 							</div><!--/.row-->
 						</div><!--/.container-->

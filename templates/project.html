@@ -51,10 +51,11 @@
 					</div><!--/.section-header-->
 					<div class="news-card news-card-pb-25">
 							<div class="row">
+								{% for i in projects %}
 								<div class="col-md-4 col-sm-6">
 									<div class="single-news-box">
 										<div class="news-box-bg">
-											<img src="{% static 'assets/images/blog/bl1.jpg' %}" alt="blog image">
+											<img src="{% static 'projects.image.urls' %}" alt="blog image">
 											<div class="isotope-overlay">
 												<a href=" {% static '#' %}">
 													<span class="lnr lnr-link"></span>
@@ -64,13 +65,14 @@
 
 										</div><!--/.team-box-bg-->
 										<div class="news-box-inner">
+											<h2>{{i.name}}</h2>
 											<h3>
 												<a href=" {% static '#' %}">
-													The Pros and Cons of Starting an Online Consulting Business
+													{{i.content}}
 												</a>
 											</h3>
 											<p class="news-meta">
-												started on:  <span>12th january</span>  // ends On <span>12th June, 2017</span>
+												started on:  <span>{{i.published_date}}</span>  // ends On <span>{{i.ending_date}}</span>
 											</p>
 											<!-- <a href=" {% static '#' %}" class="learn-btn">
 												learn more
@@ -78,6 +80,8 @@
 										</div><!--/.news-box-inner-->
 									</div><!--/.single-news-box-->
 								</div><!--.col-->
+								{% endfor %}
+								
 								<div class="col-md-4 col-sm-6">
 									<div class="single-news-box">
 										<div class="news-box-bg">
@@ -105,6 +109,7 @@
 										</div><!--/.news-box-inner-->
 									</div><!--/.single-news-box-->
 								</div><!--.col-->
+
 								<div class="col-md-4 col-sm-6">
 									<div class="single-news-box">
 										<div class="news-box-bg">
