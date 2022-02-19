@@ -55,7 +55,7 @@
 								<div class="col-md-4 col-sm-6">
 									<div class="single-news-box">
 										<div class="news-box-bg">
-											<img src="{% static 'projects.image.urls' %}" alt="blog image">
+											<img src="{% static '{{i.image.url}}' %}" alt="blog image">
 											<div class="isotope-overlay">
 												<a href=" {% static '#' %}">
 													<span class="lnr lnr-link"></span>
@@ -82,61 +82,9 @@
 								</div><!--.col-->
 								{% endfor %}
 								
-								<div class="col-md-4 col-sm-6">
-									<div class="single-news-box">
-										<div class="news-box-bg">
-											<img src="{% static 'assets/images/blog/bl2.jpg' %}" alt="blog image">
-											<div class="isotope-overlay">
-												<a href=" {% static '#' %}">
-													<span class="lnr lnr-link"></span>
-													
-												</a>
-											</div>
+								
 
-										</div><!--/.team-box-bg-->
-										<div class="news-box-inner">
-											<h3>
-												<a href=" {% static '#' %}">
-													8 Secrets for Your successful Business Mentor Won't Tell You
-												</a>
-											</h3>
-											<p class="news-meta">
-												started on:  <span>12th january</span>  // ends On <span>12th June, 2017</span>
-											</p>
-											<!-- <a href=" {% static '#' %}" class="learn-btn">
-												learn more
-											</a> -->
-										</div><!--/.news-box-inner-->
-									</div><!--/.single-news-box-->
-								</div><!--.col-->
 
-								<div class="col-md-4 col-sm-6">
-									<div class="single-news-box">
-										<div class="news-box-bg">
-											<img src="{% static 'assets/images/blog/bl3.jpg' %}" alt="blog image">
-											<div class="isotope-overlay">
-												<a href=" {% static '#' %}">
-													<span class="lnr lnr-link"></span>
-													
-												</a>
-											</div>
-
-										</div><!--/.team-box-bg-->
-										<div class="news-box-inner">
-											<h3>
-												<a href=" {% static '#' %}">
-													Hire a Branding Consultant With a Similar Aesthetic to Your Own
-												</a>
-											</h3>
-											<p class="news-meta">
-												started on:  <span>12th january</span>  // ends On <span>12th June, 2017</span>
-											</p>
-											<!-- <a href=" {% static '#' %}" class="learn-btn">
-												learn more
-											</a> -->
-										</div><!--/.news-box-inner-->
-									</div><!--/.single-news-box-->
-								</div><!--.col-->
 							</div><!--/.row-->
 							<div class="project-btn text-center">
 								<a href=" {% static 'blog.html' %}"  class="project-view">read more
